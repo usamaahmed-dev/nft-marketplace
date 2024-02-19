@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: "Work Sans";
+            src: url("./fonts/WorkSans-Regular.ttf");
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <div class="navigation">
+        <h2>NFT Marketplace</h2>
+        <ul>
+            <li>Marketplace</li>
+            <li>Rankings</li>
+            <li>Connect a wallet</li>
+        </ul>
+        <button id="signUp">Sign up</button>
+    </div>
+
+    <!-- Hero Section -->
+
+    <div class="hero-section">
+        <div class="hero-section__content">
+            <h1>Discover <span>Digital Art & Collect NFTs</span></h1>
+            <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT
+                artists.</p>
+
+            <div class="hero-section__image-mobile">
+                <img src="../Assignment-nft-marketplace/placeholder-images/Image Placeholder.png" alt="">
+                <div class="hero-section__image__content">
+                    <h3>Space Walking</h3>
+                    <p>Animakid</p>
+                </div>
+            </div>
+
+            <button id="heroSectonLabel">Get Started</button>
+            <div class="list-items">
+                <div>
+                    <p class="value">240k+</p>
+                    <p class="label">Total Sale</p>
+                </div>
+                <div>
+                    <p class="value">100k+</p>
+                    <p class="label">Auctions</p>
+                </div>
+                <div>
+                    <p class="value">240k+</p>
+                    <p class="label">Artists</p>
+                </div>
+            </div>
+
+            <!-- <div class="list-items">
+                <div class="list1">
+                    <ul>
+                        <li>240k +</li>
+                        <li>100k +</li>
+                        <li>240k +</li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <ul>
+                        <li>Total Sale</li>
+                        <li>Auctions</li>
+                        <li>Artists</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        <div class="hero-section__image">
+            <img src="../Assignment-nft-marketplace/placeholder-images/Image Placeholder.png" alt="">
+            <div class="hero-section__image__content">
+                <h3>Space Walking</h3>
+                <p>Animakid</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Collection -->
+
+    <div class="trending-collection">
+        <div class="trending-collection__content">
+            <h1>Trending Collection</h1>
+            <p>Checkout our weekly updated trending collection.</p>
+        </div>
+        <div class="trending-collection__card__grid">
+            <div class="trending-collection__card">
+                <div class="collection-card">
+                    <img src="../Assignment-nft-marketplace/placeholder-images/image1.png" alt="">
+                </div>
+                <div class="collection-card__list">
+                    <img src="../Assignment-nft-marketplace/secondary-images/Secondary image1.png" alt="">
+                    <img src="../Assignment-nft-marketplace/secondary-images/Secondary image2.png" alt="">
+                    <label>1025+</label>
+                </div>
+                <div class="collection-card__list__title">
+                    <h3>DSGN Animals</h3>
+                </div>
+                <div class="collection-card__list__content">
+                    <img src="../Assignment-nft-marketplace/Avatar-images/Avatar1.png" alt="">
+                    <p>MrFox</p>
+                </div>
+            </div>
+
+            <div class="trending-collection__card">
+                <div class="collection-card">
+                    <img src="../Assignment-nft-marketplace/placeholder-images/image2.png" alt="">
+                </div>
+                <div class="collection-card__list">
+                    <img src="../Assignment-nft-marketplace/secondary-images/Secondary image3.png" alt="">
+                    <img src="../Assignment-nft-marketplace/secondary-images/Secondary image4.png" alt="">
+                    <label>1025+</label>
+                </div>
+                <div class="collection-card__list__title">
+                    <h3>Magic Mushrooms</h3>
+                </div>
+                <div class="collection-card__list__content">
+                    <img src="../Assignment-nft-marketplace/Avatar-images/Avatar2.png" alt="">
+                    <p>Shroomie</p>
+                </div>
+            </div>
+
+            <div class="trending-collection__card">
+                <div class="collection-card">
+                    <img src="../Assignment-nft-marketplace/placeholder-images/image3.png" alt="">
+                </div>
+                <div class="collection-card__list">
+                    <img src="../Assignment-nft-marketplace/secondary-images/Secondary image5.png" alt="">
+                    <img src="../Assignment-nft-marketplace/secondary-images/Secondary image6.png" alt="">
+                    <label>1025+</label>
+                </div>
+                <div class="collection-card__list__title">
+                    <h3>Disco Machines</h3>
+                </div>
+                <div class="collection-card__list__content">
+                    <img src="../Assignment-nft-marketplace/Avatar-images/Avatar3.png" alt="">
+                    <p>BeKind2Robots</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Rated Artists -->
+
+    <div class="top-artists">
+        <div class="headline-button">
+            <div class="top-artists__content">
+                <h1>Top creators</h1>
+                <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+            </div>
+            <button id="topArtistsButton" class="desktop-btn">View Rankings</button>
+        </div>
+        <div class="artist-cards__grid">
+            <div class="card">
+                <div class="image">
+                    <h4>1</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card1.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Keepitreal</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>2</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>DigiLab</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>3</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>GravityOne</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>4</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Juanie</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>5</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>BlueWhale</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>6</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>mr fox</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>7</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Shroomie</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>8</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>robotica</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>9</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>RustyRobot</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>10</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>animakid</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>11</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card11.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Dotgu</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>12</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Ghiblier</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>13</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>RustyRobot</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>14</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>BlueWhale</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <h4>15</h4>
+                    <img src="../Assignment-nft-marketplace/Avatar-card-images/Avatar card4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Juanie</h3>
+                    <div class="total-sales">
+                        <p>Total Sales:</p>
+                        <label>34.53 ETH</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="topArtistsButton" class="mobile-btn">View Rankings</button>
+    </div>
+
+    <!-- Browse Categories  -->
+
+    <div class="browse-categories">
+        <div class="browse-categories__title">
+            <h1>Browse Categories</h1>
+        </div>
+        <div class="categories-card__grid">
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/category card1.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/PaintBrush icon(1).png"
+                        alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Art</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard2.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/Swatchesicon2.png" alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Collectibles</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard3.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/MusicNotesicon3.png"
+                        alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Music</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard4.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/Cameraicon4.png" alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Photography</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard5.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/VideoCameraicon5.png"
+                        alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Video</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard6.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/MagicWandicon6.png" alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Utility</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard7.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/Basketballicon7.png"
+                        alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Sport</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard8.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/Planeticon8.png" alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Virtual Worlds</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard9.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/Swatches10.png" alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Collectibles</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="imageBox">
+                    <img class="image" src="../Assignment-nft-marketplace/Category-card-images/categorycard10.png"
+                        alt="">
+                    <img class="overlayImage" src="../Assignment-nft-marketplace/icon-images/MusicNotes9.png" alt="">
+                </div>
+                <div class="collection-name">
+                    <h3>Sound</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discover more NFT's -->
+
+    <div class="discover-more__nfts">
+        <div class="section-headline">
+            <div class="section-headline__content">
+                <h1>Discover More NFTs</h1>
+                <p>Explore new trending NFTs</p>
+                <button id="discoverMoreBtn">See All</button>
+            </div>
+        </div>
+        <div class="nft-card__grid">
+            <div class="nft-card__placeholder">
+                <div class="card-placeholder">
+                    <img src="../Assignment-nft-marketplace/Discover-placeholder-images/DiscoverPlaceholder1.png"
+                        alt="">
+                </div>
+                <div class="collection-card__list__content">
+                    <h3 class="collection-card__list__title">Distant Galaxy</h3>
+                    <div class="collection-card__list__seller">
+                        <img src="../Assignment-nft-marketplace/Avatar-images/Avatar1.png" alt="">
+                        <p>MoonDancer</p>
+                    </div>
+                    <div class="price-bid__list">
+                        <div class="price-bid__list__item">
+                            <p>Price</p>
+                            <p>1.63 ETH</p>
+                        </div>
+                        <div class="price-bid__list__item">
+                            <p>Highest Bid</p>
+                            <p>0.33 wETH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-card__placeholder">
+                <div class="card-placeholder">
+                    <img src="../Assignment-nft-marketplace/Discover-placeholder-images/DiscoverPlaceholder2.png"
+                        alt="">
+                </div>
+                <div class="collection-card__list__content">
+                    <h3 class="collection-card__list__title">Life On Edena</h3>
+                    <div class="collection-card__list__seller">
+                        <img src="../Assignment-nft-marketplace/Avatar-images/Avatar5.png" alt="">
+                        <p>NebulaKid</p>
+                    </div>
+
+                    <div class="price-bid__list">
+                        <div class="price-bid__list__item">
+                            <p>Price</p>
+                            <p>1.63 ETH</p>
+                        </div>
+                        <div class="price-bid__list__item">
+                            <p>Highest Bid</p>
+                            <p>0.33 wETH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-card__placeholder">
+                <div class="card-placeholder">
+                    <img src="../Assignment-nft-marketplace/Discover-placeholder-images/DiscoverPlaceholder3.png"
+                        alt="">
+                </div>
+                <div class="collection-card__list__content">
+                    <h3 class="collection-card__list__title">AstroFiction</h3>
+
+                    <div class="collection-card__list__seller">
+                        <img src="../Assignment-nft-marketplace/Avatar-images/Avatar6.png" alt="">
+                        <p>Spaceone</p>
+                    </div>
+
+                    <div class="price-bid__list">
+                        <div class="price-bid__list__item">
+                            <p>Price</p>
+                            <p>1.63 ETH</p>
+                        </div>
+                        <div class="price-bid__list__item">
+                            <p>Highest Bid</p>
+                            <p>0.33 wETH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="discoverMoreBtn" class="mobile-btn">See All</button>
+    </div>
+
+    <!-- NFT highlight -->
+
+    <div class="nft-highlight">
+        <img src="../Assignment-nft-marketplace/placeholder-images/NFT-Highlight.png" alt="">
+    </div>
+
+    <div class="nft-highlight__mobile">
+        <img src="./NFT Highlight (1).png" alt="">
+    </div>
+
+
+    <!-- How it works -->
+
+    <div class="how-it__works">
+        <div class="how-it__works__content">
+            <h1>How it works</h1>
+            <p>Find out how to get started</p>
+        </div>
+        <div class="how-it__works__cardgrid">
+            <div class="how-it__works__info__card">
+                <div class="how-it__works__icon">
+                    <img src="./Icon.png" alt="">
+                </div>
+                <div class="how-it__works__card__detailes">
+                    <h3>Setup Your Wallet</h3>
+                    <p>Set up your wallet of choice. connect it to the Animarket by clicking the wallet icon in the
+                        top right corner.</p>
+                </div>
+            </div>
+
+            <div class="how-it__works__info__card">
+                <div class="how-it__works__icon">
+                    <img src="./Icon.png" alt="">
+                </div>
+                <div class="how-it__works__card__detailes">
+                    <h3>Create Collection</h3>
+                    <p>Upload your work and setup your collection. Add a description, social links and floor price.</p>
+                </div>
+            </div>
+
+            <div class="how-it__works__info__card">
+                <div class="how-it__works__icon">
+                    <img src="./Icon.png" alt="">
+                </div>
+                <div class="how-it__works__card__detailes">
+                    <h3>Start Earning</h3>
+                    <p>Chosse between auctions and fixed-price listings. Start earning by selling your NFTs or trading
+                        others.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Widget -->
+
+    <div class="subscribe-widget">
+        <div class="subscribe-widget__grid">
+            <div class="subscribe-widget__image">
+                <img src="./Photo.png" alt="">
+            </div>
+
+            <div class="subscribe-widget__detail">
+                <h1>Join Our Weekly <br> Digest</h1>
+                <p>Get Exclusive Promotions & Updates Straight To Your Inbox.</p>
+
+                <div class="input-subscribe">
+                    <input class="email" type="text" placeholder="Enter your email here">
+                    <button>Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="footer-detaile">
+            <div class="footer-list1">
+                <h2>NFT Marketplace</h2>
+                <p>NFT marketplace UI created with Anima for Figma.</p>
+                <p>Join our community.</p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="footer-list2">
+                <h2>Explore</h2>
+                <p>Marketplace</p>
+                <p>Rankings</p>
+                <p>Connect a wallet</p>
+            </div>
+            <div class="footer-list3">
+                <h2>Join Our Weekly Digest</h2>
+                <p>Get exclusive promotions & updates <br> straight to your inbox.</p>
+                <div class="input-subscribe">
+                    <input class="email" type="text" placeholder="Enter your email here">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p id="footerText"><i class="fa-regular fa-copyright"></i> NFT Market. Use this template freely.</p>
+        </div>
+    </div>
+</body>
+
+</html>
